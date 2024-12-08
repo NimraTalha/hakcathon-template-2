@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
 import Hero from "./components/hero";
 import Brand from "./components/brand";
@@ -17,7 +18,7 @@ export default function Home() {
    <Product />
    <Benefit />
    <Touch />
-   {/* <ProductListing /> */}
+<ProductListing/>
    
 
    </>

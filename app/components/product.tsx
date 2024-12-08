@@ -2,12 +2,14 @@
 import Image from 'next/image'
 import React from 'react'
 import { useRouter } from 'next/navigation';
+
 const Product = () => {
   const router = useRouter();
 
   const handleNavigation = () => {
     router.push('/productlisting'); // Navigates to the "/about" page
   };
+
   return (
     <>
       <section>
@@ -18,13 +20,13 @@ const Product = () => {
           <div className='flex flex-col md:flex-row gap-8 mt-8'>
             
             {/* Product 1 */}
-            <div className='w-full md:w-[700px] h-auto'>
+            <div className='w-full md:w-[700px] h-auto group'>
               <Image
                 src={'/images/large.png'}
                 height={800}
                 width={800}
                 alt='sofa'
-                className='w-full h-[80%] object-cover'
+                className='w-full h-[80%] object-cover transition-transform duration-300 ease-in-out group-hover:scale-105'
               />
               <div className='mt-4 text-[#2A254B]'>
                 <p className='py-2'>The popular suede sofa</p>
@@ -33,13 +35,13 @@ const Product = () => {
             </div>
 
             {/* Product 2 */}
-            <div className='w-full md:w-[350px] h-auto'>
+            <div className='w-full md:w-[350px] h-auto group'>
               <Image
                 src={'/images/chair.png'}
                 height={800}
                 width={800}
                 alt='chair'
-                className='w-full h-[80%] object-cover'
+                className='w-full h-[80%] object-cover transition-transform duration-300 ease-in-out group-hover:scale-105'
               />
               <div className='mt-4 text-[#2A254B]'>
                 <p className='py-2'>The Dandy chair</p>
@@ -48,13 +50,13 @@ const Product = () => {
             </div>
 
             {/* Product 3 */}
-            <div className='w-full md:w-[350px] h-auto'>
+            <div className='w-full md:w-[350px] h-auto group'>
               <Image
                 src={'/images/chair1.png'}
                 height={900}
                 width={900}
                 alt='chair'
-                className='w-full h-[80%] object-cover'
+                className='w-full h-[80%] object-cover transition-transform duration-300 ease-in-out group-hover:scale-105'
               />
               <div className='mt-4 text-[#2A254B]'>
                 <p className='py-2'>The Dandy chair</p>

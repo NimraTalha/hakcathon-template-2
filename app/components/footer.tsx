@@ -6,10 +6,10 @@ import { IoLogoSkype } from "react-icons/io";
 const Footer = () => {
   return (
     <>
-      <div className='px-6 md:px-12 py-12 bg-[#2A254B] mt-12'>
+      <div className='px-6 md:px-12 py-8 bg-[#2A254B] mt-8'>
         <div className="flex flex-wrap gap-12 md:gap-[100px] lg:gap-[200px]">
           {/* Menu Section */}
-          <div className="text-white w-full sm:w-auto">
+          <div className="text-gray-500 w-full sm:w-auto">
             <h1 className="text-lg md:text-xl font-bold">Menu</h1>
             <div className='space-y-2'>
               <h1><Link href={'/'}>New Arrivals</Link></h1>
@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
 
           {/* Categories Section */}
-          <div className="text-white w-full sm:w-auto">
+          <div className="text-gray-500 w-full sm:w-auto">
             <h1 className="text-lg md:text-xl font-bold">Categories</h1>
             <div className='space-y-2'>
               <h1><Link href={'/'}>Crockery</Link></h1>
@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
 
           {/* Company Section */}
-          <div className="text-white w-full sm:w-auto">
+          <div className="text-gray-500 w-full sm:w-auto">
             <h1 className="text-lg md:text-xl font-bold">Our Company</h1>
             <div className='space-y-2'>
               <h1><Link href='/about'>About us</Link></h1>

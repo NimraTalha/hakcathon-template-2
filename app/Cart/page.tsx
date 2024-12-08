@@ -1,9 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Navbar from "../components/navbar";
 
 const Cart = () => {
   return (
-    <div>
+    <><Navbar /><div>
       <div className="bg-gray-200 w-full px-4 sm:px-10 lg:px-40 pt-10 pb-16 h-auto text-custom-purple">
         <h1 className="text-2xl sm:text-3xl text-center lg:text-left">
           Your Shopping Cart
@@ -17,8 +19,7 @@ const Cart = () => {
                 <img
                   src="/images/Product Image.png"
                   alt="Product 1"
-                  className="w-20 h-20 sm:w-28 sm:h-28"
-                />
+                  className="w-20 h-20 sm:w-28 sm:h-28 transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1" />
                 <div className="ml-6">
                   <h1 className="text-base sm:text-lg font-medium">
                     Graystone vase
@@ -42,8 +43,7 @@ const Cart = () => {
                 <img
                   src="/images/Product Image 2.png"
                   alt="Product 2"
-                  className="w-20 h-20 sm:w-28 sm:h-28"
-                />
+                  className="w-20 h-20 sm:w-28 sm:h-28 transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1" />
                 <div className="ml-6">
                   <h1 className="text-base sm:text-lg font-medium">
                     Basic white vase
@@ -86,7 +86,7 @@ const Cart = () => {
           </button>
         </div>
       </div>
-    </div>
+    </div></>
   );
 };
 
